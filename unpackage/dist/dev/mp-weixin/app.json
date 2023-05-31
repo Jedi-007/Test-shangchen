@@ -1,6 +1,9 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/home/home",
+    "pages/cate/cate",
+    "pages/shopcar/shopcar",
+    "pages/my/my"
   ],
   "subPackages": [],
   "window": {
@@ -8,6 +11,34 @@
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/home.png",
+        "selectedIconPath": "static/home-a.png"
+      },
+      {
+        "pagePath": "pages/cate/cate",
+        "text": "首页",
+        "iconPath": "static/cate.png",
+        "selectedIconPath": "static/cate-a.png"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "首页",
+        "iconPath": "static/car.png",
+        "selectedIconPath": "static/car.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我",
+        "iconPath": "static/person.png",
+        "selectedIconPath": "static/person-a.png"
+      }
+    ]
   },
   "usingComponents": {}
 }
