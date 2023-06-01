@@ -5,7 +5,14 @@
     "pages/shopcar/shopcar",
     "pages/my/my"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        "goods_detail/goods_detail"
+      ]
+    }
+  ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
@@ -30,7 +37,7 @@
         "pagePath": "pages/shopcar/shopcar",
         "text": "首页",
         "iconPath": "static/car.png",
-        "selectedIconPath": "static/car.png"
+        "selectedIconPath": "static/car-a.png"
       },
       {
         "pagePath": "pages/my/my",

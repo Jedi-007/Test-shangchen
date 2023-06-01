@@ -30,7 +30,24 @@
             }
             
         }
+        
     ],
+	"subPackages": [
+	{
+		"root": "subpkg",
+		"pages": [
+			
+		{
+                    "path" : "goods_detail/goods_detail",
+                    "style" :                                                                                    
+                {
+                    
+                }
+                
+                }
+            ]
+	}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
@@ -58,7 +75,7 @@
 				"pagePath": "pages/shopcar/shopcar",
 				"text": "首页",
 				"iconPath": "static/car.png",
-				"selectedIconPath": "static/car.png"
+				"selectedIconPath": "static/car-a.png"
 				
 			},{
 				"pagePath": "pages/my/my",
