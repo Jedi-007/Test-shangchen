@@ -1,6 +1,6 @@
 <template>
 	<view>
-		4444444444444444
+		564546454654651616516515161616156
 		<!-- //注意语法的使用 参考VUE2   例如  空格：的写法 : 代表属性的动态的绑定-->
 	<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" :circular="true">
 		<swiper-item v-for="(item, i) in swiperList" :key="i">

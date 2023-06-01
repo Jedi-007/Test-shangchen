@@ -9481,9 +9481,9 @@ internalMixin(Vue);
 
 /***/ }),
 /* 26 */
-/*!***************************************!*\
-  !*** D:/wx_xcx/Final-Test/pages.json ***!
-  \***************************************/
+/*!*******************************************!*\
+  !*** D:/wx_xcx/Test-shangchen/pages.json ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -9627,9 +9627,9 @@ function normalizeComponent (
 
 /***/ }),
 /* 33 */
-/*!***********************************************************************************************!*\
-  !*** D:/wx_xcx/Final-Test/node_modules/@escook/request-miniprogram/miniprogram_dist/index.js ***!
-  \***********************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/wx_xcx/Test-shangchen/node_modules/@escook/request-miniprogram/miniprogram_dist/index.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9738,9 +9738,9 @@ exports.$http = $http;
 
 /***/ }),
 /* 34 */
-/*!*****************************************************!*\
-  !*** D:/wx_xcx/Final-Test/uni.promisify.adaptor.js ***!
-  \*****************************************************/
+/*!*********************************************************!*\
+  !*** D:/wx_xcx/Test-shangchen/uni.promisify.adaptor.js ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
