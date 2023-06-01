@@ -9,7 +9,8 @@
     {
       "root": "subpkg",
       "pages": [
-        "goods_detail/goods_detail"
+        "goods_detail/goods_detail",
+        "goods_list/goods_list"
       ]
     }
   ],
@@ -29,13 +30,13 @@
       },
       {
         "pagePath": "pages/cate/cate",
-        "text": "首页",
+        "text": "类别",
         "iconPath": "static/cate.png",
         "selectedIconPath": "static/cate-a.png"
       },
       {
         "pagePath": "pages/shopcar/shopcar",
-        "text": "首页",
+        "text": "购物车",
         "iconPath": "static/car.png",
         "selectedIconPath": "static/car-a.png"
       },

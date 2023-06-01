@@ -39,9 +39,15 @@
 			
 		{
                     "path" : "goods_detail/goods_detail",
+                    "style" : { }
+                
+                }
+                ,{
+                    "path" : "goods_list/goods_list",
                     "style" :                                                                                    
                 {
-                    
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
                 }
                 
                 }
@@ -66,14 +72,14 @@
 			},
 			{
 				"pagePath": "pages/cate/cate",
-				"text": "首页",
+				"text": "类别",
 				"iconPath": "static/cate.png",
 				"selectedIconPath": "static/cate-a.png"
 				
 			},
 			{
 				"pagePath": "pages/shopcar/shopcar",
-				"text": "首页",
+				"text": "购物车",
 				"iconPath": "static/car.png",
 				"selectedIconPath": "static/car-a.png"
 				
