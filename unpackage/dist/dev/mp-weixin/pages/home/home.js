@@ -164,6 +164,34 @@ var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/r
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default = {
   data: function data() {
     return {
@@ -171,13 +199,16 @@ var _default = {
       swiperList: [],
       //数据节点 分类 导航
       //哈哈哈哈哈哈哈哈哈哈哈哈
-      navList: []
+      navList: [],
+      //楼层的数据
+      floorList: []
     };
   },
   onLoad: function onLoad() {
     //获取数据
     this.getSwiperList();
     this.getNavlist();
+    this.getfloorList();
   },
   methods: {
     getSwiperList: function getSwiperList() {
@@ -234,6 +265,47 @@ var _default = {
             }
           }
         }, _callee2);
+      }))();
+    },
+    navClickhandler: function navClickhandler(item) {
+      if (item.name === '分类') {
+        uni.switchTab({
+          url: '/pages/cate/cate'
+        });
+      }
+    },
+    //获取首页的楼层的数据
+    getfloorList: function getfloorList() {
+      var _this3 = this;
+      return (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee3() {
+        var _yield$uni$$http$get3, res;
+        return _regenerator.default.wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                _context3.next = 2;
+                return uni.$http.get('/api/public/v1/home/floordata');
+              case 2:
+                _yield$uni$$http$get3 = _context3.sent;
+                res = _yield$uni$$http$get3.data;
+                if (!(res.meta.status !== 200)) {
+                  _context3.next = 6;
+                  break;
+                }
+                return _context3.abrupt("return", uni.$showMsg());
+              case 6:
+                res.message.forEach(function (floor) {
+                  floor.product_list.forEach(function (prod) {
+                    prod.url = '/subpkg/goods_list/goods_list?' + prod.navigator_url.split('?')[1];
+                  });
+                });
+                _this3.floorList = res.message;
+              case 8:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3);
       }))();
     }
   }
