@@ -9,12 +9,10 @@
 		</swiper-item>
 	</swiper>
 	<!-- 分类导航区 -->
-	<view class="nav-list" v-for="(item, i) in navList" :key="i">
-		<view class="nav-item">
-			<image :src="item.image_src" class="nav-img">
-				
-			</image>
-			</view>
+	<view class="nav-list">
+	   <view class="nav-item" v-for="(item, i) in navList" :key="i">
+	     <image :src="item.image_src" class="nav-img"></image>
+	   </view>
 	</view>
 	</view>
 </template>
@@ -54,6 +52,7 @@
 <style lang="scss">
 	swiper{
 		height: 330rpx;
+		
 		.swiper-item,
 		image{
 			width: 100%;
