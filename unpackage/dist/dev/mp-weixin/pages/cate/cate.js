@@ -102,6 +102,29 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  var l1 = _vm.__map(_vm.catelevel2, function (item2, i2) {
+    var $orig = _vm.__get_orig(item2)
+    var l0 = _vm.__map(item2.children, function (item3, i3) {
+      var $orig = _vm.__get_orig(item3)
+      var g0 = item3.cat_icon.replace("dev", "web")
+      return {
+        $orig: $orig,
+        g0: g0,
+      }
+    })
+    return {
+      $orig: $orig,
+      l0: l0,
+    }
+  })
+  _vm.$mp.data = Object.assign(
+    {},
+    {
+      $root: {
+        l1: l1,
+      },
+    }
+  )
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -176,14 +199,16 @@ var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/r
 //
 //
 //
-//
 var _default = {
   data: function data() {
     return {
       cateList: [],
       active: 0,
       //可用的手机宽度
-      wh: 0
+      wh: 0,
+      //二级分类的列表
+      catelevel2: [],
+      srcollTop: 0
     };
   },
   onLoad: function onLoad() {
@@ -214,13 +239,26 @@ var _default = {
                 return _context.abrupt("return", uni.$showMsg());
               case 6:
                 _this.cateList = res.message;
-              case 7:
+                //二级分类的数据
+                _this.catelevel2 = res.message.children;
+              case 8:
               case "end":
                 return _context.stop();
             }
           }
         }, _callee);
       }))();
+    },
+    activeChange: function activeChange(i) {
+      this.active = i;
+      this.catelevel2 = this.cateList[i].children;
+      this.srcollTop = this.srcollTop === 0 ? 1 : 0;
+    },
+    //跳转到商品列表的页面
+    gotoGoodsList: function gotoGoodsList(item3) {
+      uni.navigateTo({
+        url: '/subpkg/goods_list/goods_list?cid' + item3.cat_id
+      });
     }
   }
 };
